@@ -25,3 +25,23 @@
 # 查看git配置
 git config --list
 ```
+
+## accessibility
+
+- lighthouse
+
+## javascript basic
+
+- variables:
+    - var
+    - let
+    - const
+
+- data type
+    - Number
+    - Bigint
+    - String
+    - Boolean
+    - null
+    - undefined
+    - symbol
