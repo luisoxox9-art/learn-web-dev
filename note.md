@@ -45,3 +45,11 @@ git config --list
     - null
     - undefined
     - symbol
+
+## function
+
+- readability
+- reusable
+- 具有描述性的函数名
+- 专注于一个特定的任务
+- 参数, 传递给函数的额外信息
