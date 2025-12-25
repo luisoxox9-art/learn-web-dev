@@ -53,6 +53,26 @@ h1 {
   z-index: 1;
 }
 
+.jar-glossy-short {
+  background: #e2fcfd;
+  width: 3%;
+  height: 5%;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: 48%;
+  left: 6%;
+}
+
+.jar-glossy-long {
+  background: #e2fcfd;
+  width: 3%;
+  height: 20%;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: 24%;
+  left: 6%;
+}
+
 .jar-top {
   width: 50%;
   height: 5%;
