@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -27,13 +31,13 @@ h1 {
 .plant-holder {
   position: relative;
   height: 13%;
-  left: -10px;
+  left: -23px;
 }
 
 .plant {
   position: absolute;
-  max-width: 150%;
-  max-height: 150%;
+  max-width: 135%;
+  max-height: 135%;
   z-index: 2;
 }
 
