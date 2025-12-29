@@ -87,6 +87,14 @@ git config --list
 - 样式有三种：
   - 浏览器默认样式，CSS 定义的外部样式，HTML 标签属性中定义的内部样式
   - 标签样式会覆盖 CSS 样式，CSS 样式会覆盖默认样式
+- 父元素的样式会遗传给子元素
+
+  - 并不是所有样式都会遗传
+  - 会遗传的样式:
+    - color, font-family, font-size, line-height, text-align, visibility
+  - 不会遗传的样式:
+    - margin, padding, border, width, height, position
+
 - 选择设置哪个元素的样式有三种方式：
   标签名，类名，ID
 

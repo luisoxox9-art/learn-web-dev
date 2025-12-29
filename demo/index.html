@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>在Arch Linux系统上安装VSCode</h1>
+      <h2>#1 前置条件</h2>
+      <h3>#1.1 安装yay</h3>
+      <p>yay是一个arch系Linux发行版上流行的AUR Helper</p>
+      <h3>#1.2 网络连接</h3>
+      <p>
+        无论是通过官网下载VSCode的Linux版本安装包，还是使用yay下载AUR上的PKGBUILD脚本，都需要连接国际互联网才能做到。这里我们选择使用网络代理。
+      </p>
+      <h2>#2 安装VSCode</h2>
+      <p>
+        在命令行中输入
+        <code>yay -Ssa vscode</code>
+        搜索vscode。使用
+        <code>yay -Sa visual-studio-code-bin</code>
+        安装VSCode。
+      </p>
+      <aside>
+        参数解析:
+        <ul>
+          <li>
+            -S: sync，同步远端仓库。访问远端服务器上的数据时，需要添加该参数。
+          </li>
+          <li>-s: search，搜索。</li>
+          <li>-a: aur，只对AUR源进行操作。</li>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>
