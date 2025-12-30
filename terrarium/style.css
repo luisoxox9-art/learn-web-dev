@@ -1,56 +1,63 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: #3a241d;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .container {
-  background-color: #cbcbcb;
+  background-color: #f5f5f5;
   width: 15%;
   top: 0px;
-  position: absolute;
-  height: 100%;
-  padding: 10px;
+  position: absolute; /* Removes from normal flow */
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 #left-container {
-  left: 0px;
+  left: 0;
 }
 
 #right-container {
-  right: 0px;
+  right: 0;
 }
 
 .plant-holder {
-  position: relative;
+  position: relative; /* Creates positioning context */
   height: 13%;
-  left: -23px;
+  left: -0.6rem;
 }
 
 .plant {
-  position: absolute;
-  max-width: 135%;
-  max-height: 135%;
+  position: absolute; /* Allows precise placement within holder */
+  max-width: 150%;
+  max-height: 150%;
   z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.plant:hover {
+  transform: scale(1.05);
 }
 
 .jar-walls {
   height: 80%;
   width: 60%;
   background: #d1e1df;
-  border-radius: 3rem;
+  border-radius: 1rem;
   position: absolute;
   bottom: 0.5%;
   left: 20%;
   opacity: 0.5;
   z-index: 1;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.1);
 }
 
 .jar-glossy-short {
@@ -82,6 +89,7 @@ h1 {
   left: 25%;
   opacity: 0.7;
   z-index: 1;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .jar-bottom {
@@ -92,16 +100,17 @@ h1 {
   bottom: 0%;
   left: 25%;
   opacity: 0.7;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .dirt {
-  width: 59%;
+  width: 60%;
   height: 5%;
   background: #3a241d;
   position: absolute;
-  border-radius: 0 0 3rem 3rem;
-  bottom: 1.2%;
-  left: 20.5%;
+  border-radius: 0 0 1rem 1rem;
+  bottom: 1%;
+  left: 20%;
   opacity: 0.7;
   z-index: -1;
 }
