@@ -1,0 +1,127 @@
+/* 使用 position: { absolute | relative } 设计样式 */
+
+#page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* 100vw会计算垂直滚动条 */
+  width: 100%;
+
+  background-color: aliceblue;
+  z-index: -2;
+}
+
+#title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.container {
+  background-color: lightblue;
+
+  position: absolute;
+  height: 100%;
+  width: 15%;
+}
+
+#left-container {
+  left: 0;
+}
+
+#right-container {
+  right: 0;
+}
+
+.plant-holder {
+  position: relative;
+  width: 100%;
+  height: 14%;
+  z-index: 2;
+}
+
+.plant {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.jar-walls {
+  background-color: cadetblue;
+  height: 80%;
+  width: 60%;
+  opacity: 0.3;
+  border-radius: 2rem;
+
+  position: absolute;
+  bottom: 0.5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.jar-glossy-long {
+  background-color: aliceblue;
+  width: 3.8%;
+  height: 12%;
+  border-radius: 3rem;
+
+  position: absolute;
+  bottom: 14%;
+  left: 5%;
+}
+
+.jar-glossy-short {
+  background-color: aliceblue;
+  width: 3.8%;
+  height: 6%;
+  border-radius: 3rem;
+
+  position: absolute;
+  bottom: 28%;
+  left: 5%;
+}
+
+.jar-top {
+  background-color: cadetblue;
+  height: 5%;
+  width: 50%;
+  opacity: 0.5;
+  border-radius: 0.2rem;
+
+  position: absolute;
+  bottom: 80.2%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.jar-bottom {
+  background-color: cadetblue;
+  height: 1%;
+  width: 50%;
+  opacity: 0.5;
+  border-radius: 0.2rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dirt {
+  background-color: rgb(54, 29, 12);
+  height: 5%;
+  width: 59%;
+  opacity: 0.85;
+  border-radius: 0 0 3rem 3rem;
+
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
