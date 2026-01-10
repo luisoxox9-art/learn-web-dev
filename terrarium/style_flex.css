@@ -1,3 +1,10 @@
+:root {
+  --bg-side-container: aliceblue;
+  --terrarium-color: cadetblue;
+  --glossy-color: #f4ffff;
+  --dirt-color: rgb(27, 7, 7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +24,7 @@
 }
 
 .container {
-  background-color: aliceblue;
+  background-color: var(--bg-side-container);
   flex: 0 0 15%;
   display: flex;
   flex-direction: column;
@@ -47,7 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
 }
 
@@ -58,7 +65,7 @@
 }
 
 .jar-walls {
-  background-color: cadetblue;
+  background-color: var(--terrarium-color);
   width: 90%;
   height: 90%;
   position: absolute;
@@ -71,7 +78,7 @@
 }
 
 .jar-glossy-long {
-  background-color: #f4ffff;
+  background-color: var(--glossy-color);
   width: 4%;
   height: 10%;
   position: absolute;
@@ -82,7 +89,7 @@
 }
 
 .jar-glossy-short {
-  background-color: #f4ffff;
+  background-color: var(--glossy-color);
   width: 4%;
   height: 4%;
   position: absolute;
@@ -93,7 +100,7 @@
 }
 
 .jar-top {
-  background-color: cadetblue;
+  background-color: var(--terrarium-color);
   width: 75%;
   height: 5%;
   position: absolute;
@@ -106,7 +113,7 @@
 }
 
 .jar-bottom {
-  background-color: cadetblue;
+  background-color: var(--terrarium-color);
   width: 75%;
   height: 1%;
   position: absolute;
@@ -119,7 +126,7 @@
 }
 
 .dirt {
-  background-color:rgb(27, 7, 7) ;
+  background-color: var(--dirt-color);
   width: 88%;
   height: 5%;
   position: absolute;
