@@ -21,6 +21,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -45,12 +46,11 @@
   width: 100%;
   height: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 #title {
   flex: 0 0 10%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,13 +60,13 @@
 
 #terrarium {
   flex: 1;
-  width: 100%;
+  width: 90%;
   position: relative;
 }
 
 .jar-walls {
   background-color: var(--terrarium-color);
-  width: 90%;
+  width: 100%;
   height: 90%;
   position: absolute;
   bottom: 1%;
@@ -74,7 +74,7 @@
   transform: translate(-50%);
   opacity: 0.2;
   border-radius: 2rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 .jar-glossy-long {
@@ -101,7 +101,7 @@
 
 .jar-top {
   background-color: var(--terrarium-color);
-  width: 75%;
+  width: 85%;
   height: 5%;
   position: absolute;
   bottom: 91%;
@@ -109,12 +109,12 @@
   transform: translate(-50%);
   opacity: 0.5;
   border-radius: 0.5rem 0.5rem 0 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .jar-bottom {
   background-color: var(--terrarium-color);
-  width: 75%;
+  width: 85%;
   height: 1%;
   position: absolute;
   bottom: 0;
@@ -122,12 +122,11 @@
   transform: translate(-50%);
   opacity: 0.5;
   border-radius: 0 0 0.5rem 0.5rem;
-  z-index: 2;
 }
 
 .dirt {
   background-color: var(--dirt-color);
-  width: 88%;
+  width: 98%;
   height: 5%;
   position: absolute;
   bottom: 2%;
@@ -135,5 +134,5 @@
   transform: translate(-50%);
   opacity: 0.9;
   border-radius: 0 0 2rem 2rem;
-  z-index: 0;
+  z-index: -1;
 }
