@@ -1,5 +1,7 @@
 # Note
 
+[JavaScript note](./jsnote.md)
+
 ## 如何设置一行元素中的某列为固定宽度
 
 ```css
@@ -134,3 +136,27 @@ h1 {
   justify-content: space-evenly;
 }
 ```
+
+## 一个本身就有宽度和高度的元素，要怎么设置它和包含它的容器的宽高
+
+```css
+.item {
+  width: 100%;
+  height: auto;
+}
+
+.item-container {
+  width: 100%;
+  height: 10%;
+}
+
+.outer-container {
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+```
+
+## 如何让内部元素保持宽高比缩放到填满外部的元素，即总存在内部元素的宽度或高度与外部元素一样
